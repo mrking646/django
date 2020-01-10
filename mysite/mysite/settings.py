@@ -25,19 +25,20 @@ SECRET_KEY = '9&3it(uwyh0-*1v^qqu&(gl-v@&ejrydusmgt1#t3+5hmt@r7y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["101.132.115.54"]
+ALLOWED_HOSTS = ["101.132.115.54", "127.0.0.1"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls',
+    
 ]
 
 MIDDLEWARE = [
